@@ -1,44 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tip Calculator</title>
-    <!-- css link -->
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="heading">
-            <h2>Tip Calculator</h2></div>
-        <div class="Calculator">
-            <div class="form">
-                <h3>How Much Was Your Bill?
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tip Calculator</title>
+		<!-- css link -->
+		<link rel="stylesheet" href="./style/style.css" />
+	</head>
+	<body>
+		<div class="outer">
+			<div class="inner">
+				<h1>Tip Calculator</h1>
+				<label>Bill Amount</label>
+				<input type="text" id="bamount" /><br />
+				<label>Tips Percentage</label>
+				<input type="text" id="tpercentage" /><br />
+				<label>Tips Amount</label>
+				<input type="text" disabled id="ttamount" /><br />
+				<label>Total Amount</label>
+				<input type="text" disabled id="tbamount" /><br />
+				<button class="btn btn-primary" onclick="Bill()">
+					Calculate
+				</button>
+			</div>
+		</div>
 
-                </h3>
-                    <Input class="billAmt" Type="Text" Placeholder="Bill Amount">
-                    <h3><P>How Was The Service?</P>
-                    <select class="servicequality">        
-                    <option>Choose One </option>        
-                    <option Value="0.0">0%-Average</option>
-                    <option Value="0.1">10%-Good</option>
-                    <option Value="0.2">20%-Excellent</option>
-                    </select>
-                </h3>
-
-                    <button Type="Button" class="Calculate">Calculate!</button>
-            </div>
-        <div class="totaltip">
-        <h3>Tip Total:-
-        <Span class=tipTotal></Span></h3>
-        <h3>Bill Total:- 
-        <Span class="billTotal"></Span></h3>
-        </div>
-        </div>
-    </div>
-
-    <!-- script link -->
-    <script src="./script/script.js"></script>
-</body>
+		<!-- script link -->
+		<script src="./script/script.js"></script>
+	</body>
 </html>

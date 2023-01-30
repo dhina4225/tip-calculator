@@ -1,82 +1,63 @@
-
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background:#005e78 ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+	font-family: "Itim", cursive;
+	overflow: hidden;
 }
 
-.container{
-    margin-top: 50px;
-    height: 75vh;
-    background: #f5f5f5;
-    box-Shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    border: none;
-    border-Radius: 20px;
+.outer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.inner {
+	width: 50vh;
+	display: flex;
+	flex-direction: column;
+	border-radius: 20px;
+	padding: 40px;
+	background: rgba(255, 255, 255, 0.035);
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+		rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+		rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-h2{
-    font-Size: 16px;
-    font-Weight: Bold;
+h1 {
+	text-align: center;
+	font-size: 1.5em;
+	text-transform: capitalize;
+	letter-spacing: 3px;
 }
 
-.heading{
-    background:#00989b ;
-    color: White;
-    padding: 10px 100px;
-    text-Transform: Uppercase;
-    font-Size: 16px;
-    border: none;
-    border-Top-Left-Radius: 20px;
-    border-Top-Right-Radius: 20px;
+label {
+	font-size: 1em;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
 }
 
-.heading h3{
-    text-align: center;
-}
-.form{
-    padding: 10px 10px;
-}
-
-input{
-    padding: 5px 10px;
-    background: #ffffff;
-    color: #00989b;
-    font-size: 16px;
-    font-weight: 800;
-    border-radius: 10px;
-    border: 2px solid #00989b ;
+input {
+	padding: 10px;
+	font-size: 1.2em;
+	border: 2px solid #099e76e5;
+	border-radius: 10px;
+	outline: none;
 }
 
-select{
-    background-color: #00989b;
-    border-radius: 5px;
-    color: azure;
-    padding: 5px 10px;
+button {
+	padding: 20px;
+	margin-top: 10px;
+	font-size: 15px;
+	letter-spacing: 3px;
+	font-family: "Itim", cursive;
+	font-weight: bold;
+	background: #099e76e5;
+	color: #fff;
+	border: 1px solid #099e76e5;
+	border-radius: 20px;
+	text-transform: uppercase;
+	outline: none;
 }
-
-button{
-    margin: auto;
-    padding: 10px 40px;
-    text-Transform: Uppercase;
-    font-Weight: Bold;
-    display: Block;
-    background: #005e78;
-    border: none;
-    border-Radius: 15px;
-    font-Size: 15px;
-    color: White;
-}
-button:hover{
-    background:#fff;
-    color: #005e78;
-}
-.totaltip{
-    margin: 10px;
-}
-
